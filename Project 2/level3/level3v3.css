@@ -1,0 +1,32 @@
+#smallbox {
+	position: absolute;
+	border: 1px solid black;
+	padding: 10px;
+	top: 210px;
+	left: 534px;
+}
+
+#mediumsmallbox {
+	position: absolute;
+	border: 2px solid black;
+	padding: 10px;
+	top: 153px;
+	left: 710px;
+}
+
+#slightlybiggerthenthelastbox {
+	position: absolute;
+	border: 5px solid black;
+	padding: 10px;
+	top: 295px;
+	left: 710px;
+}
+
+#supermassivelybigbox {
+	position: absolute;
+	border: 9px solid black;
+	padding: 10px;
+	top: 295px;
+	left: 428px;
+	padding-left: 20px;
+}
