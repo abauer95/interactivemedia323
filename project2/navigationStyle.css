@@ -1,0 +1,21 @@
+.navStyle{
+    font-family: courier;
+    font-size: 12pt;
+    letter-spacing: 0pt;
+    line-height: normal;
+    padding-top: 0px;
+    padding: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.navStyle a{
+    text-decoration: none;
+    color: black;
+}
+
+.navStyle a:hover{
+    text-transform: uppercase;
+    color: #005f60
+}
+

@@ -1,0 +1,32 @@
+#box1 {
+	border: 25px dashed black;
+	padding: 25px;
+}
+
+#box2 {
+	border: 15px double black;
+	padding: 25px;
+	display: inline-block;
+	margin: 0px;
+	position: relative;
+	left: 20%;
+	margin-top: 100px;
+}
+
+#box3{
+	border: 15px solid black;
+	padding: 25px;
+	display: inline-block;
+	position: relative;
+	left: 30.3%;
+	margin-top: 100px;
+}
+
+#box4{
+	border: 5px solid black;
+	padding: 25px;
+	display: inline-block;
+	position: relative;
+	left: 30.3%;
+	margin-top: 100px;
+}

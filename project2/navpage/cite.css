@@ -1,0 +1,64 @@
+body{
+	background-color: black;
+	color: ghostwhite;
+}
+
+#title{
+  height:32vh;
+  width:100%;
+  font-family: serif;
+  font-size: 20pt;
+  border: 0;
+}
+
+#navwheel {
+  text-align: center;
+  height: 95%;
+  width: 50vh;
+  position:absolute; 
+  left:0;
+  right:0;
+  top:-50px;
+  bottom:0;
+  
+  margin:auto;
+  max-width:100%;
+  max-height:100%;
+  overflow:hidden;
+  padding: 0px;
+  margin-top: 2.5%;
+}
+
+#navwheel::-webkit-scrollbar {
+  display: none;
+}
+
+.space {
+  height: 26vh;
+  width: 50vh;
+}
+
+.level {
+  border-bottom: .075em solid gray;
+  font-size: 6vh;
+  margin: auto;
+  max-width: 100%;
+  margin-top: 6.75vh;
+  height: 6.75vh;
+}
+
+.version {
+  font-size: 4vh;
+  padding: 0.25vh;
+  height: 4vh;
+}
+
+a {
+  color: firebrick;
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+}
+
