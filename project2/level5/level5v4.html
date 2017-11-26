@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <title>Level 5 Version 4</title>
+  <link rel="stylesheet" href="../navigationStyle.css" type="text/css" />
+  <style>
+    .facade{
+      animation: 500ms ease 4s 1 slideOut;
+      animation-fill-mode:forwards;
+    }
+    
+    @keyframes slideOut{
+      0%{
+        transform: translateX(0);
+      }
+      100%{
+        transform: translateX(-50%);
+        opacity: 0;
+      }
+    }
+    
+    @keyframes slideUp{
+      0%{
+        transform: translateY(250%);
+      }
+      100%{
+        transform: translateY(-40%);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes fadeOut{
+      0%{
+        opacity: 1;
+      }
+      100%{
+        opacity: 0;
+      }
+    }
+    
+    @keyframes drop{
+      0% {
+        transform: translateY(-100%) scale(50);
+        opacity: 1;
+      }
+      50% {
+        transform: translateY(-100%) scale(0.8);
+      }
+      60% {
+        transform: translateY(-100%) scale(1.15);
+      }
+      70% {
+        transform: translateY(-100%) scale(0.9);
+      }
+      80% {
+        transform: translateY(-100%) scale(1.075);
+      }
+      90% {
+        transform: translateY(-100%) scale(0.975);
+      }
+      100% {
+        transform: translateY(-100%) scale(1);
+        opacity: 1;
+      }
+    }
+    
+    .doSomething{
+      opacity: 0;
+      animation: 500ms ease 5.5s 1 slideUp, 1s ease 12s 1 fadeOut;
+      animation-fill-mode: forwards;
+      position: relative;
+      text-align: center;
+      font: 24pt arial;
+    }
+    
+    .number3 {
+      opacity: 0;
+      animation: 1s ease 13.5s 1 drop;
+      position: relative;
+      transform: translateY(-100%);
+      animation-fill-mode: forwards;
+      text-align: center;
+      font: 32pt courier;
+      font-weight: 200;
+      color: darkblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navStyle">
+    <center>
+      <a href="level5v3.html">Back &nbsp;</a>
+      <a href="../navpage/index.html"> Home</a>
+      <a href="level5v5.html">&nbsp; Next</a>
+    </center>
+  </div>
+  <div class="facade">
+    <br><br> jolifanto bambla o falli bambla<br> großiga m’pfa habla horem<br> egiga goramen<br> higo bloiko russula huju<br> hollaka hollala<br> anlogo bung<br> blago bung blago bung<br> bosso fataka<br> ü üü ü<br> schampa wulla wussa olobo<br> hej tatta gorem<br> eschige zunbada<br> wulubu ssubudu uluwu ssubudu<br> –umf
+    <br> kusa gauma<br> ba–umf
+  </div>
+  <br><br>
+  
+  <div class="doSomething">
+    <div>hollaka hollala</div>
+    <div>anlogo bung</div>
+    <div>blago bung blago bung</div>
+    <div>bosso fataka</div>
+    <div>ü üü ü</div>
+    <div>schampa wulla wussa olobo</div>
+  </div>
+  
+  <div class="number3">
+    <div>hej tatta <strong>gorem</strong></div>
+    <div><strong>eschige</strong> zunbada</div>
+    <div>wulubu ssubudu uluwu <strong>ssubudu</strong></div>
+    <div><strong>–umf</strong></div>
+    <div>kusa gauma</div>
+    <div><strong>ba</strong>–umf</div>
+  </div>
+</body>
+</html>

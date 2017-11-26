@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<!-- https://coolors.co/222e50-007991-439a86-bcd8c1-eff1f3 -->
+
+<head>
+	<title>Level 5 Version 2</title>
+	<link rel="stylesheet" href="../navigationStyle.css" type="text/css" />
+	<style>
+		.thebutton {
+			background: #007991;
+			color: #EFF1F3;
+			border: none;
+			padding: 15px 25px;
+			margin-bottom: 10px;
+			display: inline-block;
+			position: relative;
+			box-shadow: 3px 3px 2px lightgray;
+			transition-duration: 2000ms;
+			font: 22pt courier;
+			z-index: 5;
+		}
+
+		.thebutton:hover {
+			background: #222E50;
+			transform: scale(1.2);
+			color: #BCD8C1;
+			cursor: pointer;
+			transition-duration: 300ms;
+		}
+
+		.thebutton:active {
+			transform: scale(2);
+			transition: all 100ms;
+			background: black;
+		}
+
+		.bambla {
+			opacity: 0;
+			display: inline-block;
+			right: 0px;
+			position: relative;
+			transform: scale(0.1);
+			background: none;
+			line-height: 30pt;
+			font: 22pt arial;
+			margin-bottom: 10px;
+
+			animation: bambla 100ms linear;
+			animation-fill-mode: forwards;
+			animation-play-state: paused;
+			transition: all 5s;
+		}
+
+		.bambla:hover {
+			background: #8d5620;
+			color: #EFF1F3;
+			transition: all 1.5s;
+			border-radius: 1em;
+			cursor: pointer;
+		}
+
+		.thebutton:active~.bambla,
+		.bambla:active~.schampa,
+		.schampa:active~.one {
+			animation-play-state: running;
+		}
+
+		@keyframes bambla {
+			to {
+				opacity: 1;
+				border: solid 1px black;
+				box-shadow: 2px 2px 1px lightgray;
+				padding: 15px 25px;
+				transform: scale(1);
+			}
+		}
+
+		.schampa {
+			padding: 10px 15px;
+			opacity: 0;
+			display: inline-block;
+			position: relative;
+			background: #439A86;
+			color: #EFF1F3;
+			border: solid 1px black;
+			font: 22pt impact;
+			letter-spacing: 4px;
+
+			animation: schampa 100ms linear;
+			animation-fill-mode: forwards;
+			animation-play-state: paused;
+
+			transition: all 15s;
+		}
+
+		.schampa:hover {
+			transform: skewX(15deg);
+			letter-spacing: 170pt;
+			transition: all 10s;
+			cursor: pointer;
+			background-color: #EFF1F3;
+			color: #439A86;
+		}
+
+		@keyframes schampa {
+			to {
+				opacity: 1;
+			}
+		}
+
+		.one {
+			height: 0px;
+			overflow: hidden;
+			opacity: 1;
+			position: relative;
+			background: white;
+			border: none;
+			font: 22pt courier;
+
+			animation: one 15000ms linear;
+			animation-fill-mode: forwards;
+			animation-play-state: paused;
+		}
+
+		@keyframes one {
+			to {
+				height: 2700px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="navStyle">
+		<center>
+			<a href="level5v1.html">Back &nbsp;</a>
+			<a href="../navpage/index.html"> Home</a>
+			<a href="level5v3.html">&nbsp; Next</a>
+		</center>
+	</div>
+	<br><br>
+	<br><br><br><br><br><br><br><br>
+	<center style="text-align: center; font: 22pt courier;">
+		<button class="thebutton">jolifanto?</button>
+		<div></div>
+		<button class="bambla">
+      		bambla?
+    	</button>
+		<div></div>
+		<button class="schampa">
+      		schampa?
+    	</button>
+
+		<div class="one">
+			o falli <br> bambla großiga <br> m’pfa habla<br> horem <br> egiga <br> goramen higo bloiko<br> russula huju <br> hollaka
+			<br> hollala anlogo <br>bung blago bung <br>blago bung<br> bosso <br>fataka ü <br>ü ü ü
+			<br> wulla wussa <br>olobo hej <br>tatta gorem<br> eschige
+			<br> zunbada <br> wulubu <br>ssubudu <br> uluwu ssubudu <br> –umf
+			<br> kusa <br>gauma <br> ba–umf <br> o falli <br> bambla großiga <br> m’pfa habla<br> horem <br> egiga <br> goramen higo bloiko<br> russula huju <br> hollaka
+			<br> hollala anlogo <br>bung blago bung <br>blago bung<br> bosso <br>fataka ü <br>ü ü ü
+			<br> wulla wussa <br>olobo hej <br>tatta gorem<br> eschige
+			<br> zunbada <br> wulubu <br>ssubudu <br> uluwu ssubudu <br> –umf
+			<br> kusa <br>gauma <br> ba–umf<br> o falli <br> bambla großiga <br> m’pfa habla<br> horem <br> egiga <br> goramen higo bloiko<br> russula huju <br> hollaka
+			<br> hollala anlogo <br>bung blago bung <br>blago bung<br> bosso <br>fataka ü <br>ü ü ü
+			<br> wulla wussa <br>olobo hej <br>tatta gorem<br> eschige
+			<br> zunbada <br> wulubu <br>ssubudu <br> uluwu ssubudu <br> –umf
+			<br> kusa <br>gauma <br> ba–umf
+		</div>
+
+	</center>
+</body>
+
+</html>

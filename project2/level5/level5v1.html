@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Level 5 Version 1</title>
+  <link rel="stylesheet" href="../navigationStyle.css" type="text/css" />
+  <style>
+    .triggerbox, .triggerbox2 {
+      /*border: solid darkred 2px;*/
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 2px;
+    }
+    
+    #next {
+      text-decoration: none;
+      color: black;
+      font-family: courier;
+      font-size: 12pt;
+      letter-spacing: 0pt;
+      line-height: normal;
+    }
+    
+    #next:hover {
+      text-transform: uppercase;
+      color: #005f60;
+    }
+    
+    #next:hover ~ .triggerbox .anim {
+      animation-play-state: running;
+    }
+
+    .anim {
+      animation-duration: 750ms;
+      animation-play-state: paused;
+      animation-iteration-count: infinite;
+      pointer-events: none;
+    }
+    
+    .triggerbox:hover .anim {
+      animation-play-state: running;
+    }
+    
+    @keyframes line1{
+      0% { transform: rotate(0deg); right: 0px; top: 0px; color: black;}
+      50% { transform: rotate(25deg) translatex(250px); color: coral;}
+      100% { transform: rotate(0deg); right: 0px; top: 0px; color: black;}
+    }
+    
+    @keyframes line2{
+      0% { transform: rotate(0deg); right: 0px; top: 0px; color: black;}
+      50% { transform: rotate(-25deg) translatex(-250px); color: #a64c3f;}
+      100% { transform: rotate(0deg); right: 0px; top: 0px; color: black;}
+    }
+    
+    @keyframes line3{
+      0% { letter-spacing: 1pt; color: black; }
+      50% { letter-spacing: 30pt; color: #f7ad02; }
+      100% { letter-spacing: 1pt; color: black; }
+    }
+    
+    @keyframes line4{
+      0% { font-size: 20pt; color: black; line-height: 25pt;}
+      50% { font-size: 40pt; color: #028296;line-height: 50pt;}
+      100% { font-size: 20pt; color: black; line-height: 25pt;}
+    }
+    
+    @keyframes line5{
+      0% { transform: rotate(0deg); color: black; }
+      50% { transform: rotate(145deg); color: forestgreen;}
+      100% { transform: rotate(0deg); color: black; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navStyle">
+    <center>
+      <a href="../level4/level4v5.html">Back &nbsp;</a>
+      <a href="../navpage/index.html"> Home</a>
+      <a class="test" href="level5v2.html" style="opacity: 0;">&nbsp; Next </a>
+    </center>
+  </div>
+  <br><br>
+
+  <div style=" text-align: center;
+                 font-size: 20pt;
+                 font-family: helvetica;
+                 line-height: 25pt;">
+
+    <a id="next" href="level5v2.html" style="position: absolute; left: calc(50% + 42px); top: 8px; width: 50px;">Next</a>
+   
+    <div class="triggerbox"><div class="anim" style="animation-name: line1;">jolifanto bambla o falli bambla</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line2;">großiga m’pfa habla horem</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line5;">egiga goramen</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line3;">higo bloiko russula huju</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line4;">hollaka hollala</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line4;">anlogo bung</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line5;">blago bung blago bung</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line2;">bosso fataka</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line5;">ü üü ü</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line2;">schampa wulla wussa olobo</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line3;">hej tatta gorem</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line4;">eschige zunbada</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line1;">wulubu ssubudu uluwu ssubudu</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line4;">–umf</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line1;">kusa gauma</div></div> <br>
+    <div class="triggerbox"><div class="anim" style="animation-name: line3;">ba–umf</div></div> <br>
+  </div>
+</body>
+</html>
