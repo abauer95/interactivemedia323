@@ -1,0 +1,110 @@
+body{
+  height: 100%;
+  background: black;
+}
+
+.t1, .t2, .t3, .t4, .t5, .t6, .t7, .t8{
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  color: green;
+  font-family: courier;
+  font-weight: bold;
+  font-size: 22pt;
+}
+
+@media screen and (max-width: 5000px) {
+  body{ 
+    background: url("images/img9.png");
+  }
+  .t1, .t2, .t3, .t4, .t5, .t6, .t7{
+    opacity: 0;
+  }
+  .t8{
+    opacity: 100;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  body{ 
+    background: url("images/img8.png");
+  }
+  .t1, .t2, .t3, .t4, .t5, .t6, .t8{
+    opacity: 0;
+  }
+  .t7{
+    opacity: 100;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  body{ 
+    background: url("images/img7.png");
+  }
+  .t1, .t2, .t3, .t4, .t5, .t8, .t7{
+    opacity: 0;
+  }
+  .t6{
+    opacity: 100;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  body{ 
+    background: url("images/img6.png");
+  }
+  .t1, .t2, .t3, .t4, .t8, .t6, .t7{
+    opacity: 0;
+  }
+  .t5{
+    opacity: 100;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  body{ 
+    background: url("images/img5.png");
+  }
+  .t1, .t2, .t3, .t8, .t5, .t6, .t7{
+    opacity: 0;
+  }
+  .t4{
+    opacity: 100;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body{ 
+    background: url("images/img4.png");
+  }
+  .t1, .t2, .t8, .t4, .t5, .t6, .t7{
+    opacity: 0;
+  }
+  .t3{
+    opacity: 100;
+  }
+}  
+
+@media screen and (max-width: 700px) {
+  body{ 
+    background: url("images/img3.png");
+  }
+  .t1, .t8, .t3, .t4, .t5, .t6, .t7{
+    opacity: 0;
+  }
+  .t2{
+    opacity: 100;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body{ 
+    background: url("images/img2.png");
+  }
+  .t8, .t2, .t3, .t4, .t5, .t6, .t7{
+    opacity: 0;
+  }
+  .t1{
+    opacity: 100;
+  }
+}
