@@ -1,0 +1,382 @@
+body {
+  background-color: #241;
+  overflow: hidden;
+}
+
+.text {
+  font-size: 28pt;
+  color: white;
+  font-family: courier;
+  text-align: center;
+}
+
+#line1,#line2,#line3,#line4,#line5,
+#line6,#line7,#line8,#line9,#line10,#line11,#line12,#line13,#line14 {
+  display: none;
+  font-size: 28pt;
+  color: white;
+  font-family: courier;
+  text-align: center;
+  margin-top: 20%;
+  position: absolute;
+}
+
+#line1,#line3,#line5,#line7,#line9,#line11,#line13 {
+  animation: fadeIn 1s 1 ease, blurIn 1s 1 ease;
+  margin-top: 20%;
+  color: white;
+  font-family: courier;
+  text-align: center;
+}
+
+#line2{
+  margin-top: 10%;
+}
+
+#line4{
+  margin-top: 5%;
+  width: 90%;
+  left: 5%;
+  text-align: left;
+  transform: skewY(-3deg);
+}
+
+#line6{
+  bottom:5%;
+}
+
+#line8{
+  text-align: right;
+  width: 70%;
+  right: 2%;
+  margin-top: 5%;
+  
+}
+
+#line10{
+  width: 60%;
+  margin-left: auto; margin-right: auto;
+  left: 20%;
+}
+#line12{
+  text-align: right;
+  width: 70%;
+  right: 2%;
+  bottom: 25%;
+}
+
+#line14{
+  margin-left: auto; margin-right: auto;
+  left: 4%;
+}
+
+#next {
+  font-size: 32pt;
+  color: burlywood;
+  user-select: none;
+  cursor: none;
+}
+
+#next:hover {
+  text-transform: uppercase;
+  color: crimson;
+}
+
+#start {
+  font-size: 36pt;
+  font-family: courier;
+  animation: type 4s steps(60, end);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 20%;
+  color: white;
+
+  cursor: none;
+  user-select: none;
+  display: none;
+
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#start:hover {
+  text-transform: uppercase;
+  color: crimson;
+
+}
+
+.particle {
+  display: none;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.backVideo {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#mountain {
+  display: none;
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: mtScale 2s linear 1;
+  animation-fill-mode: forwards;
+  transform-origin: bottom center;
+}
+
+#snow {
+  animation: hideSnow 3s linear 1;
+  animation-fill-mode: forwards;
+}
+
+#circle {
+  display: none;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(transparent 100%, rgba(0, 0, 0, 1) 100%);
+  pointer-events: none;
+  animation: circleIn 1.5s linear 1;
+  animation-fill-mode: forwards;
+}
+
+#darkCloud{
+  display: none;
+  width: 150px;
+  height: 150px;
+  background: black;
+  border-radius: 100px;
+  left: -20%;
+  top: -20%;
+  position: absolute;
+  animation: cloudScale 1.5s linear 1;
+  animation-fill-mode: forwards;
+}
+
+#blinkingLine{
+  animation: blink 1s infinite;
+}
+
+#cite{
+  bottom: 0%;
+  left: 0;
+  text-align: left;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  font-family: monospace;
+  font-size: 18pt;
+  padding: 50px;
+  display: none;
+}
+
+@keyframes cloudScale{
+  to{
+    transform: scale(25);
+    left: 25%;
+    top: 25%;
+  }
+}
+
+@keyframes mtScale {
+  0% {
+    transform: scale(0.1);
+  }
+  25% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(10);
+  }
+}
+
+@keyframes circleIn {
+  0% {
+    background: radial-gradient(transparent 100%, rgba(0, 0, 0, 1) 100%);
+  }
+  2.5% {
+    background: radial-gradient(transparent 97.5%, rgba(0, 0, 0, 1) 97.5%);
+  }
+  5% {
+    background: radial-gradient(transparent 95%, rgba(0, 0, 0, 1) 95%);
+  }
+  7.5% {
+    background: radial-gradient(transparent 92.5%, rgba(0, 0, 0, 1) 92.5%);
+  }
+  10% {
+    background: radial-gradient(transparent 90%, rgba(0, 0, 0, 1) 90%);
+  }
+  12.5% {
+    background: radial-gradient(transparent 87.5%, rgba(0, 0, 0, 1) 87.5%);
+  }
+  15% {
+    background: radial-gradient(transparent 85%, rgba(0, 0, 0, 1) 85%);
+  }
+  17.5% {
+    background: radial-gradient(transparent 82.5%, rgba(0, 0, 0, 1) 82.5%);
+  }
+  20% {
+    background: radial-gradient(transparent 80%, rgba(0, 0, 0, 1) 80%);
+  }
+  22.5% {
+    background: radial-gradient(transparent 77.5%, rgba(0, 0, 0, 1) 77.5%);
+  }
+  25% {
+    background: radial-gradient(transparent 75%, rgba(0, 0, 0, 1) 75%);
+  }
+  27.5% {
+    background: radial-gradient(transparent 72.5%, rgba(0, 0, 0, 1) 72.5%);
+  }
+  30% {
+    background: radial-gradient(transparent 70%, rgba(0, 0, 0, 1) 70%);
+  }
+  32.5% {
+    background: radial-gradient(transparent 67.5%, rgba(0, 0, 0, 1) 67.5%);
+  }
+  35% {
+    background: radial-gradient(transparent 65%, rgba(0, 0, 0, 1) 65%);
+  }
+  37.5% {
+    background: radial-gradient(transparent 62.5%, rgba(0, 0, 0, 1) 62.5%);
+  }
+  40% {
+    background: radial-gradient(transparent 60%, rgba(0, 0, 0, 1) 60%);
+  }
+  42.5% {
+    background: radial-gradient(transparent 57.5%, rgba(0, 0, 0, 1) 57.5%);
+  }
+  45% {
+    background: radial-gradient(transparent 55%, rgba(0, 0, 0, 1) 55%);
+  }
+  47.5% {
+    background: radial-gradient(transparent 52.5%, rgba(0, 0, 0, 1) 52.5%);
+  }
+  50% {
+    background: radial-gradient(transparent 50%, rgba(0, 0, 0, 1) 50%);
+  }
+  52.5% {
+    background: radial-gradient(transparent 47.5%, rgba(0, 0, 0, 1) 47.5%);
+  }
+  55% {
+    background: radial-gradient(transparent 45%, rgba(0, 0, 0, 1) 45%);
+  }
+  57.5% {
+    background: radial-gradient(transparent 42.5%, rgba(0, 0, 0, 1) 42.5%);
+  }
+  60% {
+    background: radial-gradient(transparent 40%, rgba(0, 0, 0, 1) 40%);
+  }
+  62.5% {
+    background: radial-gradient(transparent 37.5%, rgba(0, 0, 0, 1) 37.5%);
+  }
+  65% {
+    background: radial-gradient(transparent 35%, rgba(0, 0, 0, 1) 35%);
+  }
+  67.5% {
+    background: radial-gradient(transparent 32.5%, rgba(0, 0, 0, 1) 32.5%);
+  }
+  70% {
+    background: radial-gradient(transparent 30%, rgba(0, 0, 0, 1) 30%);
+  }
+  72.5% {
+    background: radial-gradient(transparent 27.5%, rgba(0, 0, 0, 1) 27.5%);
+  }
+  75% {
+    background: radial-gradient(transparent 25%, rgba(0, 0, 0, 1) 25%);
+  }
+  77.5% {
+    background: radial-gradient(transparent 22.5%, rgba(0, 0, 0, 1) 22.5%);
+  }
+  80% {
+    background: radial-gradient(transparent 20%, rgba(0, 0, 0, 1) 20%);
+  }
+  82.5% {
+    background: radial-gradient(transparent 17.5%, rgba(0, 0, 0, 1) 17.5%);
+  }
+  85% {
+    background: radial-gradient(transparent 15%, rgba(0, 0, 0, 1) 15%);
+  }
+  87.5% {
+    background: radial-gradient(transparent 12.5%, rgba(0, 0, 0, 1) 12.5%);
+  }
+  90% {
+    background: radial-gradient(transparent 10%, rgba(0, 0, 0, 1) 10%);
+  }
+  92.5% {
+    background: radial-gradient(transparent 7.5%, rgba(0, 0, 0, 1) 7.5%);
+  }
+  95% {
+    background: radial-gradient(transparent 5%, rgba(0, 0, 0, 1) 5%);
+  }
+  97.5% {
+    background: radial-gradient(transparent 2.5%, rgba(0, 0, 0, 1) 2.5%);
+  }
+  100% {
+    background: radial-gradient(transparent 0%, rgba(0, 0, 0, 1) 0%);
+  }
+}
+
+@keyframes hideSnow {
+  33% {
+    background-color: transparent;
+  }
+  66% {
+    background-color: #FFF;
+  }
+  83% {
+    background-color: #FFF;
+    opacity: 1;
+  }
+  100% {
+    background-color: transparent;
+    opacity: 0;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes blurIn {
+  0% {
+    filter: blur(40px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+@keyframes blink{
+  to{
+    opacity: 0;
+  }
+}

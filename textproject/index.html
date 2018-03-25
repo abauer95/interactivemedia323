@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lost Between Realities</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <video id="crevice" class="backVideo" src="./assets/crevice.mp4"></video>
+  <video id="drips" class="backVideo" src="./assets/drips.mp4"></video>
+  <video id="bridge" class="backVideo" src="./assets/bridge.mp4"></video>
+  <video id="stairs" class="backVideo" src="./assets/stairs.mp4"></video>
+  <video id="windows" class="backVideo" src="./assets/windows.mp4"></video>
+  <video id="footprints" class="backVideo" src="./assets/footprints.mp4"></video>
+  
+
+  <div id="start">Lost Between Realities</div>
+  <div id="cite" onmouseover="changeText()" onmouseout="deleteText()">*</div>
+
+  <div id="line1">“Somewhere behind the grey clouds the sun must have gone down, for it began to get dark as they went down into a deep valley with a <span id="next" onclick="river();">river</span> at the bottom.” Pg. 36</div>
+
+  <div id="line2">A dividing <span id="next" onclick="bridge();">bridge</span> from an end to a renewed life, blocked by a murky flow that carries the sediment and litter from sight.</div>
+
+  <div id="line3">“The first we heard of it was a noise like a <span id="next" onclick="snowblind();">hurricane</span> coming from the North, and the pine-trees on the Mountain creaking and cracking in the wind.” Pg. 27</div>
+
+  <div id="line4">Four floors above to find rows of chairs and a <span id="next" onclick="windows();">wall of windows</span> looking out to trees and distant rooftops. </div>
+
+  <div id="line5">“Trees are not very comfortable to sit in for long at any time; but in the cold and the wind, with wolves all round below waiting for you, they can be perfectly <span id="next" onclick="wolf();">miserable</span> places.” Pg. 111</div>
+
+  <div id="line6">Drip by drip, the anxious wait while the poison flows. The body wants to reject and continues to try but knows there is no other option and must <span id="next" onclick="poison()">accept</span> it.</div>
+
+  <div id="line7">“The truth was he had been lying quiet, out of sight and out of <span id="next" onclick="circle();">mind</span>, in a very dark corner for a long while”. Pg. 72</div>
+
+  <div id="line8">Descending to freedom has long been awaited, and the breath of clean air is the first relief. But, the beginning of a <span id="next" onclick="stairs();">slow</span> and painful recovery.</div>
+
+  <div id="line9">“There were many paths that led up into those mountains, and many passes over them. But most of the paths were cheats and deceptions and led <span id="next" onclick="paths();">nowhere</span> or to bad ends; and most of the passes were infested by evil things and dreadful dangers.” Pg. 61</div>
+
+  <div id="line10">Streaks of saliva and staggered footprints marks a long and familiar path, and the will to keep going begins to feel <span id="next" onclick="footprints()">automated</span>.</div>
+
+  <div id="line11">“The pale peaks of the mountains were coming <span id="next" onclick="mountain()">nearer</span>, moonlit spikes of rock sticking out of black shadows. Summer or not, it seemed very cold.” Pg. 118</div>
+
+  <div id="line12">As the toxin settles in and finds a <span id="next" onclick="crevice()">home</span>, the ability to move or eat fades. While slowly drifting into a deep sleep, I ponder about the cycle finally coming to an end.</div>
+
+  <div id="line13">“The lands opened wide about him, filled with the waters of the river which broke up and wandered in a hundred winding courses, or halted in marshes and pools dotted with isles on every side; but still a strong water flowed on <span id="next" onclick="sludge()">steadily</span> through the midst.” Pg. 205</div>
+
+  <div id="line14">There, in my sleep, <span id="next" onclick="location.reload()">dreams</span> revealed life and a long future, and a future came. 
+  <br> <span id="blinkingLine">|</span> </div>
+
+  <img id="snow" class="particle" src="./assets/snowblind.gif">
+  <img id="bite" class="particle" src="./assets/bite.gif">
+  <img id="paths" class="particle" src="./assets/paths.gif">
+  <img id="sludge" class="particle" src="./assets/sludge.gif">
+  <img id="mountain" src="./assets/mountain.png">
+  <div id="circle"></div>
+  <div id="darkCloud"></div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
